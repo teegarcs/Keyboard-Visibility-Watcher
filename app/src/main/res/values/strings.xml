@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">IME Animation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="home_input_hint">home input</string>
+    <string name="notifications_input_hint">Notifications Input</string>
+    <string name="dashboard_input_hint">Dashboard Input</string>
+</resources>
