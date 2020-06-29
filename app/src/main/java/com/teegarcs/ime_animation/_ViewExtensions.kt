@@ -30,7 +30,6 @@ fun View.addKeyboardWatcher(keyboardCallback: (visible: Boolean) -> Unit) {
                 keyboardCallback(keyboardUpdateCheck)
                 keyboardVisible = keyboardUpdateCheck
             }
-
         }
     }
 }
