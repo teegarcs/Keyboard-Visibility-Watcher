@@ -2,6 +2,7 @@ package com.teegarcs.ime_animation
 
 import android.os.Build
 import android.os.Bundle
+import android.view.WindowInsets
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -34,7 +35,10 @@ class MainActivity : AppCompatActivity() {
 
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            binding.container.addKeyboardWatcher(mainViewModel.keyboardCallback)
+            //only required if using the KeyboardInsetListener
+            window.setDecorFitsSystemWindows(false)
+            //only receives callbacks when the inset affects my window.
+            binding.container.addKeyboardInsetListener(mainViewModel.keyboardCallback)
         }
     }
 }

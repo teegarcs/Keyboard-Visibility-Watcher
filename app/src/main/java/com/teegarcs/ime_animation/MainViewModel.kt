@@ -10,7 +10,6 @@ class MainViewModel : ViewModel() {
     private val _keyboardActive = MutableLiveData<Int>()
     val keyboardActive: LiveData<Int> = _keyboardActive
 
-
     //callback to be provided to extension function for keyboard changes
     val keyboardCallback: (visible: Boolean) -> Unit = {
         _keyboardActive.value = if (it) {
